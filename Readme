@@ -1,0 +1,6 @@
+To run this project:
+
+1. open folder containing the project
+2. run npm install
+3. Run 'python -m SimpleHTTPServer 8000' to start a webserver on port 8000
+4. Then open the project on that port

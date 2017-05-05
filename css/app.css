@@ -1,0 +1,72 @@
+body,html{
+    height:100%;
+    min-width:470px;
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+header{
+    text-align:center;
+}
+
+.frame {
+    /*background-image: url(../images/cup.png);*/
+    /*background-size: cover;*/
+    /*background-position-y: -51px;*/
+    height: 400px;
+    float: left;
+    width: 450px;
+}
+
+.head{
+    margin: 0;
+    background: beige;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.cropArea {
+    background: #E4E4E4;
+    overflow: hidden;
+    height:350px;
+    margin-bottom: 20px;
+}
+
+.cropped {
+    position:absolute;
+    z-index:-1;
+}
+
+#image-on-cup{
+    height: 100%;
+    width:100%;
+}
+
+.fileSelect{
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+.fileSelect span{
+    display: block;
+    padding: 5px;
+}
+
+#span1{
+    font-size: 19px;
+    font-weight:bold;
+}
+
+.download{
+    margin-bottom: 15px;
+    outline: none;
+    margin-left: 20px;
+    background: beige;
+    height: 45px;
+    width: 130px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px 1px beige;
+}
+
+

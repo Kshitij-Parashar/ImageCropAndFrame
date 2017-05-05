@@ -1,0 +1,26 @@
+<article>
+    <header ng-include="'html/partials/header.html'" class="topnavbar-wrapper"></header>
+    <section ng-controller="Cropper" class="container widgetContainer">
+        <div class="row fileSelect">
+            <span id="span1">Select Image</span>
+            <span id="span2"><input type="file" id="fileInput"/></span>
+        </div>
+        <div class="row">
+        <div class="col-md-6 col-lg-6 cropArea">
+            <img-crop image="myImage" result-image="myCroppedImage" area-type="rectangle"></img-crop>
+        </div>
+        <div class="col-md-6 col-lg-6">
+
+        <div class="frame">
+            <canvas id="canvas" width=500 height=400></canvas>
+            <div id="cropFrame" class="cropped">
+            <img id="image-on-cup" ng-src="{{myCroppedImage}}"/>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="row">
+          <button class="download" ng-click="download(myCroppedImage)">Download Image</button>
+        </div>
+    </section>
+</article>
